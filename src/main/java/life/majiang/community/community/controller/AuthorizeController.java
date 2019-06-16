@@ -11,7 +11,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import javax.annotation.Resource;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletResponse;
 import java.util.UUID;
@@ -34,8 +33,8 @@ public class AuthorizeController {
     * 将@Autowired注解换成@Resource
     * 这样就不会报错了
     * */
-    @Resource
-    //@Autowired
+   // @Resource
+    @Autowired
     private UserMapper userMapper;
 
     @GetMapping("/callback")

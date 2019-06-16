@@ -3,6 +3,7 @@ package life.majiang.community.community.dto;
 public class GithubUser {
     private String name;
     private Long id;
+    //用户简介
     private String bio;
 
     public String getName() {
